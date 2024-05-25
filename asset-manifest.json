@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/pryaniky-test/static/css/main.e6c13ad2.css",
-    "main.js": "/pryaniky-test/static/js/main.c76cb7f1.js",
+    "main.js": "/pryaniky-test/static/js/main.6d2f644b.js",
     "index.html": "/pryaniky-test/index.html",
     "main.e6c13ad2.css.map": "/pryaniky-test/static/css/main.e6c13ad2.css.map",
-    "main.c76cb7f1.js.map": "/pryaniky-test/static/js/main.c76cb7f1.js.map"
+    "main.6d2f644b.js.map": "/pryaniky-test/static/js/main.6d2f644b.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.c76cb7f1.js"
+    "static/js/main.6d2f644b.js"
   ]
 }
