@@ -13,6 +13,7 @@ const LoginPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [userAuthError, setUserAuthError] = useState(false);
+  const [networkError, setNetworkError] = useState(false);
 
   const style = {
     position: 'absolute',
@@ -37,9 +38,11 @@ const LoginPage = () => {
           console.log('token>>', token);
           return token;
         }
+        setNetworkError(false);
       }
     } catch (e) {
       console.log('error>>', e);
+      setNetworkError(true);
     }
   }
 
@@ -53,6 +56,7 @@ const LoginPage = () => {
   };
 
   const handleSubmit = (event) => {
+    setNetworkError(false);
     loginUser();
     event.preventDefault();
     console.log('Username:', username);
@@ -69,7 +73,10 @@ const LoginPage = () => {
     >
       {userAuthError ? (
         <Alert severity="error">Incorrect username or password</Alert>
-      ): null}
+      ) : null}
+      {networkError ? (
+        <Alert severity="error">Network error</Alert>
+      ) : null}
       <TextField
         autoFocus
         label="Username"
