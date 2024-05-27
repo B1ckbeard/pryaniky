@@ -1,2 +1,2 @@
-## Test-task SPA-application => [view site](https://b1ckbeard.github.io/pryaniky-test/)
+## Test-task SPA-application
 Tech Stack: Html, CSS, JS, React, Redux-toolkit, Material UI, Axios
